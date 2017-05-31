@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipsLel", "TipsLel\TipsLel.csproj", "{32CE3312-9AC5-4630-99CD-6ACEE0D0420D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumeWebApi", "ConsumeWebApi\ConsumeWebApi.csproj", "{1197F8F7-FF35-4A20-9CC0-D9DF8214FA85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{32CE3312-9AC5-4630-99CD-6ACEE0D0420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32CE3312-9AC5-4630-99CD-6ACEE0D0420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32CE3312-9AC5-4630-99CD-6ACEE0D0420D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1197F8F7-FF35-4A20-9CC0-D9DF8214FA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1197F8F7-FF35-4A20-9CC0-D9DF8214FA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1197F8F7-FF35-4A20-9CC0-D9DF8214FA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1197F8F7-FF35-4A20-9CC0-D9DF8214FA85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
