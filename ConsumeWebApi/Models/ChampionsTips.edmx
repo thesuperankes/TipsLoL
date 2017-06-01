@@ -14,8 +14,18 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="TipsEveryDay">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Date" Type="date" />
+        </EntityType>
         <EntityContainer Name="tsaloltipsModelStoreContainer">
           <EntitySet Name="ChampionTips" EntityType="Self.ChampionTips" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipsEveryDay" EntityType="Self.TipsEveryDay" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -32,7 +42,17 @@
         </EntityType>
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ChampionTips" EntityType="Self.ChampionTips" />
+          <EntitySet Name="TipsEveryDay" EntityType="tsaloltipsModel.TipsEveryDay" />
         </EntityContainer>
+        <EntityType Name="TipsEveryDay">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -46,6 +66,16 @@
                 <ScalarProperty Name="IdInGame" ColumnName="IdInGame" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipsEveryDay">
+            <EntityTypeMapping TypeName="tsaloltipsModel.TipsEveryDay">
+              <MappingFragment StoreEntitySet="TipsEveryDay">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

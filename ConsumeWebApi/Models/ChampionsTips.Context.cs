@@ -26,5 +26,6 @@ namespace ConsumeWebApi.Models
         }
     
         public virtual DbSet<ChampionTips> ChampionTips { get; set; }
+        public virtual DbSet<TipsEveryDay> TipsEveryDay { get; set; }
     }
 }

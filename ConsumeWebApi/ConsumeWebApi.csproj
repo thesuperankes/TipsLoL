@@ -77,8 +77,12 @@
     <Compile Include="Models\ChampionTips.cs">
       <DependentUpon>ChampionsTips.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TipsEveryDay.cs">
+      <DependentUpon>ChampionsTips.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TutorialEntityFrameworks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
