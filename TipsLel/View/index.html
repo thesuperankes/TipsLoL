@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASP.NET Web API</title>
+    <script src="../Scripts/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () 
+        {
+            $.getJSON("../api/GetDailyTip/",
+                function (data) {
+ 
+                    $.each(data, function (key, val)
+                    {
+                        var str = val.Name + ': $' + val.Description;
+                        $('<li/>', { text: str })
+                            .appendTo($('#items'));
+                    });
+                });
+        });
+ 
+        function show() {
+            var Id = $('#itId').val();
+            $.getJSON("../api/GetDailyTip/" + Id,
+                    function (data) {
+                        var str = data.Name + ': $' + data.Description;
+                        $('#items').text(str);
+                    })
+                .fail(
+                    function (jqXHR, textStatus, err) {
+                        $('#items').text('Error: ' + err);
+                    });
+        }
+    </script>
+ 
+</head>
+<body id="body" >
+<div class="main-content">
+    <div>
+        <h1>Showing All Items </h1>
+        <ul id="items"/>
+    </div>
+    <div>
+        <label for="itId">ID:</label>
+        <input type="text" id="itId" size="5"/>
+        <input type="button" value="Search" onclick="show();" />
+        <p id="item" />
+    </div>
+</div>
+</body>
+</html>

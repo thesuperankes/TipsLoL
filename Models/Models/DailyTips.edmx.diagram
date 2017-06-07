@@ -4,9 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="47c5e4df1d0040a4a9c4b758d21c9dcd" Name="Diagram1">
-        <EntityTypeShape EntityType="tsaloltipsModel.ChampionTips" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="tsaloltipsModel.TipsEveryDay" Width="1.5" PointX="3.125" PointY="0.75" />
+      <Diagram DiagramId="8658ede050ab4e25b35de3b5c175dc58" Name="Diagram1">
+        <EntityTypeShape EntityType="tsaloltipsModel.TipsEveryDay" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConsumeWebApi.Models
+namespace Models.Models
 {
     using System;
     using System.Data.Entity;
@@ -25,7 +25,6 @@ namespace ConsumeWebApi.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ChampionTips> ChampionTips { get; set; }
         public virtual DbSet<TipsEveryDay> TipsEveryDay { get; set; }
     }
 }

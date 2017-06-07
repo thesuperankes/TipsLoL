@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConsumeWebApi.Models
+namespace Models.Models
 {
     using System;
     using System.Collections.Generic;
